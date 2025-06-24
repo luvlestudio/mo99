@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="/img/heart_icon.png" />
+  <meta name="viewport" content="width=device-width" />
+  <title>인화 ♥ 지원의 결혼식에 초대합니다.</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,target-densitydpi=medium-dpi" />
+  <!-- 검색 엔진 색인화 방지 -->
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="googlebot" content="noindex, nofollow" />
+  
+  <!-- 페이지 캐싱 및 아카이빙 방지 -->
+  <meta name="robots" content="noarchive, nosnippet" />
+  
+  <!-- 이미지 색인화 방지 -->
+  <meta name="robots" content="noimageindex" />
+  <meta name="description" content="2025년 11월 8일 토요일♡" />
+  <link rel="canonical" href="https://mo99.luvle.kr" />
+  <meta property="og:url" content="https://mo99.luvle.kr" />
+  <meta property="og:title" content="인화 ♥ 지원의 결혼식에 초대합니다." />
+  <meta property="og:description" content="2025년 11월 8일 토요일♡" />
+  <meta property="og:image" content="https://i.imgur.com/hbrBfz9.png" />
+  <meta property="og:site_name" content="인화 ♥ 지원의 결혼식에 초대합니다." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" href="swiper-bundle.min.css" />
+  <!-- kakao API -->
+  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=c2daa8b980cd01de4c366d51d8308efe"></script>
+  <script src="https://t1.kakaocdn.net/kakao_js_sdk/2.7.1/kakao.min.js"
+    integrity="sha384-kDljxUXHaJ9xAb2AzRd59KxjrFjzHa5TAoFQ6GbYTCAG0bjM55XohjjDT7tDDC01"
+    crossorigin="anonymous"></script>
+  <script>
+    Kakao.init("c2daa8b980cd01de4c366d51d8308efe");
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <!-- 꽃잎 효과 -->
+  <!-- <script type="text/javascript" src="snowfall.js"></script> -->
+  <script src="swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="gallery.js"></script>
+  <!-- new 갤러리 -->
+  <!-- <script type="text/javascript" src="newGallery.js"></script> -->
+  <!-- 카운트 다운 -->
+  <script type="text/javascript" src="countdown.js"></script>
+  <!-- 스크롤 애니메이션 -->
+  <script type="text/javascript" src="scroll.js"></script>
+  <!-- 계좌 -->
+  <script type="text/javascript" src="account.js"></script>
+  <!-- 지도 -->
+  <script type="text/javascript" src="map.js"></script>
+  <!-- 음악 -->
+  <script type="module" src="audio.js"></script>
+</head>
+
+<body>
+
+  <!-- 음악 파일을 숨긴 상태로 추가 -->
+  <audio id="bgm" loop>
+    <source src="./bgm.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- 꽃잎 효과 -->
+  <!-- <script type='text/javascript'>     
+    $(document).ready(function(){
+        $(document).snowfall({
+           flakeCount: 60, // 눈의 량을 수치로 기술
+            minSize: 2, // 눈의 최소사이즈를 수치로 입력
+            maxSize: 30, // 눈의 최대 사이즈를 수치로 입력
+            minSpeed: 1, // 눈의 최소속도를 수치로 입력
+            maxSpeed: 1, // 최대속도를 수치로 입력
+            flakeColor: "#FF9B8D", // 눈의 색을 칼라코드로 입력
+            image: "img/flower.png", // 이미지
+            round : true, // 눈이 둥글면 true, 아니면 false
+            shadow: false, // 눈의 그림자가 있으면, 없으면 false
+         })
+        });
+ </script> -->
+  <div>
+    <main>
+      <div>
+        <!-- Top 메인 사진 -->
+        <div class="animate-on-scroll-main" style="width: 100%">
+          <img src="img/wedding/cover.png" style="width: 100%; height: auto" />
+        </div>
+
+        <!-- 결혼 정보 -->
+        <div class="animate-on-scroll">
+          <div>
+            <img src="img/info.png" alt="결혼정보" style="width: 100%; height: 100%" />
+          </div>
+        </div>
+
+        <!-- 음악 재생 이미지 버튼 -->
+        <img id="playButton" src="img/play.png" alt="Play">
+
+        <!-- 전화걸기 -->
+        <section id="wedding-desc-section" class="flex justify-center" style="background-color: white">
+          <div class="animate-on-scroll">
+            <div id="weddingDesc">
+
+            </div>
+            <div style="line-height: 40px;">
+              <p id="parentInfo">
+                <span style="font-size: large">이희영</span>
+                <span>
+                  <span>의</span>
+                  <span style="
+                          font-size: large;
+                          min-width: 3rem;
+                          display: inline-block;
+                        ">장남</span>
+                </span>
+                <span style="font-size: large">이인화</span>
+                <span style="
+                        font-size: large;
+                        display: inline-block;
+                        min-width: 3rem;
+                      ">
+                  · · ·
+                </span>
+                <button id="man-call-button">
+                  <img src="img/call.png" alt="전화" style="width: 15px; height: 15px" />
+                </button>
+                <script>
+                  document
+                    .getElementById("man-call-button")
+                    .addEventListener("click", function () {
+                      var phoneNumber = "010-9556-6512";
+                      window.location.href = "tel:" + phoneNumber;
+                    });
+                </script>
+              </p>
+              <p id="parentInfo">
+                <!-- <span style="font-size: large; display: inline-flex; align-items: center;">
+                  <img src="img/flower_image.png" style="width: 20px; height: 20px; margin-right: 4px;"> -->
+                  <span style="font-size: large">
+                    고경호 · 박연아
+                </span>            
+                  <span>의</span>
+                  <span style="
+                          font-size: large;
+                          min-width: 3rem;
+                          display: inline-block;
+                        ">장녀</span>
+                </span>
+                <span style="font-size: large">고지원</span>
+                <span style="
+                        font-size: large;
+                        display: inline-block;
+                        min-width: 3rem;
+                      ">
+                  · · ·
+                </span>
+                <button id="woman-call-button">
+                  <img src="img/call.png" alt="전화" style="width: 15px; height: 15px" />
+                </button>
+                <script>
+                  document
+                    .getElementById("woman-call-button")
+                    .addEventListener("click", function () {
+                      var phoneNumber = "010-9172-7860";
+                      window.location.href = "tel:" + phoneNumber;
+                    });
+                </script>
+              </p>
+            </div>
+          </div>
+      </div>
+      </section>
+
+      <!-- 갤러리 -->
+      <section id="gallerySection">
+        <div id="galleryImages" class="gallery">
+          <span style="
+            color: #FF799B;
+            font-size: 10px;
+            min-width: 3rem;
+            display: inline-block;"><b>G A L L E R Y</b></span><br>
+          <span style="
+            color: #0C0C0C;
+            font-size: 20px;
+            min-width: 3rem;
+            display: inline-block;"><b>우리의 순간</b></span>
+          <br><br>
+
+          <div id="gallery">
+            <img src="img/wedding/01.png" title="TITLE 1" />
+            <img src="img/wedding/02.png" title="TITLE 2" />
+            <img src="img/wedding/03.png" title="TITLE 3" />
+            <img src="img/wedding/04.png" title="TITLE 4" />
+            <img src="img/wedding/05.png" title="TITLE 5" />
+            <img src="img/wedding/06.png" title="TITLE 6" />
+            <img id="addGalleyItem" class="hidden" src="img/wedding/07.png" title="TITLE 7" />
+            <img id="addGalleyItem" class="hidden" src="img/wedding/08.png" title="TITLE 8" />
+            <img id="addGalleyItem" class="hidden" src="img/wedding/09.png" title="TITLE 9" />
+            <img id="addGalleyItem" class="hidden" src="img/wedding/010.png" title="TITLE 10" />
+            <img id="addGalleyItem" class="hidden" src="img/wedding/011.png" title="TITLE 11" />
+            <img id="addGalleyItem" class="hidden" src="img/wedding/012.png" title="TITLE 12" />
+            <img id="addGalleyItem" class="hidden" src="img/wedding/013.png" title="TITLE 13" />
+            <img id="addGalleyItem" class="hidden" src="img/wedding/014.png" title="TITLE 14" />
+            <!-- <img id="addGalleyItem" class="hidden" src="img/wedding/015.png" title="TITLE 15" />
+            <img id="addGalleyItem" class="hidden" src="img/wedding/016.png" title="TITLE 16" /> -->
+          
+          </div>
+          <button id="showMoreBtn">더보기</button>
+          <button id="collapseBtn" style="display: none">접기</button>
+      </section>
+
+      <div class="animate-on-scroll">
+        <div>
+          <img src="img/calendar.png" alt="달력" style="width: 100%; height: 100%" />
+        </div>
+      </div>
+
+      <!-- 결혼식 카운트 -->
+      <div id="countdown">
+        <div class="flex justify-center" style="margin-top: 10%">
+          <table class="text-center">
+            <tr>
+              <th>DAY</th>
+              <th></th>
+              <th>HOUR</th>
+              <th></th>
+              <th>MIN</th>
+              <th></th>
+              <th>SEC</th>
+            </tr>
+            <tr>
+              <td id="daysLeft" style="color: #FF5C81; font-weight: 600">
+                119
+              </td>
+              <td>:</td>
+              <td id="hoursLeft">03</td>
+              <td>:</td>
+              <td id="minutesLeft">10</td>
+              <td>:</td>
+              <td id="secondsLeft">28</td>
+            </tr>
+          </table>
+        </div>
+        <p id="countdownInfo">
+          결혼까지 남은 시간
+          <span class="countdownTimeInfo" id="daysInfoLeft">00</span>일
+        </p>
+      </div>
+
+      <!-- 오시는 길 -->
+      <section id="locationSection" class="flex justify-center">
+
+        <div class="animate-on-scroll">
+
+          <span style="
+            color: #FF799B;
+            font-size: 9px;
+            min-width: 3rem;
+            display: inline-block;"><b>L O C A T I O N</b></span>
+
+          <div style="padding: 5px 20px 30px 20px">
+            <h1 style="
+                    font-size: 20px;
+                    textalign: center;
+                    font-weight: 600;
+                    color: #000000
+                    ;
+                  ">
+              오시는 길
+            </h1>
+            <div style="
+                    margin-top: 15px;
+                    text-align: center;
+                    line-height: 1.5rem;
+                  ">
+              <p>대구 북구 유통단지로 80</p>
+              <p style="font-weight: 600; color: #000000">
+                인터불고 엑스코 호텔 그랜드 볼룸 홀 LL층 (지하1층)
+              </p>
+            </div>
+            <div class="weddinghall-call-info">
+              <button id="weddingHallCallButton">
+                <img src="img/call.png" alt="전화" style="width: 10px; height: 10px" />
+                <p id="weddingHallCallP">053 - 380 - 0114</p>
+              </button>
+              <script>
+                document
+                  .getElementById("weddingHallCallButton")
+                  .addEventListener("click", function () {
+                    var phoneNumber = "053-380-0114";
+                    window.location.href = "tel:" + phoneNumber;
+                  });
+              </script>
+              </p>
+            </div>
+          </div>
+      </section>
+
+      <!-- 지도 -->
+      <div class="animate-on-scroll" id="mapContainer">
+        <div id="map"></div>
+        <code id="snippet" class="snippet"></code>
+        <script id="code">
+          var mapContainer = document.getElementById("map"), // 지도를 표시할 div
+            mapOption = {
+              center: new kakao.maps.LatLng(
+                35.90699572575121,
+                128.6112869293272
+              ), // 지도의 중심좌표
+              level: 3, // 지도의 확대 레벨
+            };
+          var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+
+          // var imageSrc = "img/pick.png", // 마커이미지의 주소입니다
+          //   imageSize = new kakao.maps.Size(40, 40), // 마커이미지의 크기입니다
+          //   imageOption = { offset: new kakao.maps.Point(27, 69) }; // 마커이미지의 옵션입니다. 마커의 좌표와 일치시킬 이미지 안에서의 좌표를 설정합니다.
+
+          // // 마커의 이미지정보를 가지고 있는 마커이미지를 생성합니다
+          // var markerImage = new kakao.maps.MarkerImage(
+          //     imageSrc,
+          //     imageSize,
+          //     imageOption
+          //   ),
+          //   markerPosition = new kakao.maps.LatLng(37.54699, 127.09598); // 마커가 표시될 위치입니다
+
+          // 마커가 표시될 위치입니다
+          var markerPosition = new kakao.maps.LatLng(
+            35.90699572575121,
+            128.6112869293272
+          );
+
+          // 마커를 생성합니다
+          var marker = new kakao.maps.Marker({
+            position: markerPosition,
+            // image: markerImage, // 마커이미지 설정
+          });
+
+          // 마커가 지도 위에 표시되도록 설정합니다
+          marker.setMap(map);
+        </script>
+      </div>
+
+      <!-- map 길찾기 -->
+      <div class="animate-on-scroll" id="MapIconDiv" style="background-color: #FFBFE1;">
+        <div>
+          <a class="maplink">
+            <div>
+              <button id="kakaoMapButton" type="button">
+                <!-- <img
+                      src="img/kakao.png"
+                      alt="카카오맵"
+                      style="width: 25px; height: 25px"
+                    /> -->
+                &nbsp;카카오맵으로 보기
+              </button>
+            </div>
+          </a>
+        </div>
+        <script>
+          const mapLinkEl = document.querySelector(".maplink");
+          mapLinkEl.addEventListener("click", () => { 
+            const userAgent = navigator.userAgent.toLowerCase();
+    
+            if (userAgent.indexOf('iphone') > -1 || userAgent.indexOf('android') > -1) {
+              window.location.href = "kakaomap://place?id=24481526"
+            } else {
+              window.location.href = "https://kko.kakao.com/Ko6DjADqwn";
+            }
+          });
+        </script>
+      </div>
+
+      <!-- 이동수단 정보 -->
+      <div class="animate-on-scroll">
+        <div>
+          <img src="img/location.png" alt="이동수단" style="width: 100%; height: 100%" />
+        </div>
+      </div>
+
+      <!-- <section id="locationMoveSection" class="flex justify-center">
+          <div class="animate-on-scroll">
+            <div id="locationMoveBox" class="inline-block">
+              <p id="locationMoveTitleInfo">무료 셔틀 버스</p>
+              <p id="locationMoveSubInfo">
+                예식시간 1시간 전부터 20~30분 간격으로 운행
+              </p>
+                <p id="locationMoveTitleInfo">셔틀버스 승하차 장소</p> 
+                <p id="locationMoveInfo">
+                1) 천안터미널 : 신세계백화점 옆 올리브영 매장<br />(천안타운점)앞 
+                탑승(스타벅스, 애슐리 사이 위치)<br />
+                2) 천안역 : 1번출구 동부광장 건너편 GS25편의점 앞 탑승
+              </p>
+            </div>
+            <div id="locationMoveBox" class="inline-block">
+              <p id="locationMoveTitleInfo">주차장 및 위치 안내</p>
+              <p id="locationMoveInfo">
+                <b>네비게이션 주소</b> : "응원3길 27" 또는 "응원리 67-1" 입력 <br />
+                - 타지역에서 고속도로를 이용하여 오시는 분은<br />
+                목천IC 또는 남천안IC 를 이용하시면<br />
+                더욱 편리하고 빠르게 방문할 수 있습니다. <br />
+                - 주차요원의 안내를 받으시면 더욱 편리합니다.<br />
+              </p>
+            </div>
+          </div>
+        </section> -->
+
+      <!-- 계좌번호 -->
+      <section id="accountNumberSection">
+        <div class="animate-on-scroll">
+          <h5 id="accountNumberTitleInfo"><b>마음 전하실 곳</h5>
+          <button class="accordion relative">
+            <p id="centerText">신랑 측 계좌번호</p>
+            <div class="arrow"></div>
+          </button>
+          <div class="account-panel">
+            <ul>
+              <li>
+                <strong>신랑 이인화</strong>
+                <p>신협은행 132-108-129467</p>
+                <div style="display:flex;gap:10px"><button type="button"
+                    style="width:calc(100% - 5px);color:#817b7b;font-size:13px;border:1px solid #cdcdcd;border-radius:5px;margin-top:10px;padding:5px 0;height: 40px"
+                    class="jsx-3433029997 button"><svg width="16" height="16" viewBox="0 0 20 20" fill="none"
+                      style="display: unset" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M13.7895 1H3.68421C2.75789 1 2 1.73636 2 2.63636V14.0909H3.68421V2.63636H13.7895V1ZM12.9474 4.27273L18 9.18182V17.3636C18 18.2636 17.2421 19 16.3158 19H7.04421C6.11789 19 5.36842 18.2636 5.36842 17.3636L5.37684 5.90909C5.37684 5.00909 6.12632 4.27273 7.05263 4.27273H12.9474ZM12.1053 10H16.7368L12.1053 5.5V10Z"
+                        fill="#817b7b"></path>
+                    </svg>
+                    <span class="jsx-3433029997 button__text">계좌 복사하기</span>
+                  </button><button type="button"
+                    style="width:calc(100% - 5px);color:#817b7b;font-size:13px;border:1px solid #cdcdcd;border-radius:5px;margin-top:10px;padding:5px 0;height: 40px"
+                    class="jsx-3433029997 button"><svg width="16" height="16" viewBox="0 0 20 20" fill="none"
+                      style="display: unset" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M10 3.26666C5.96831 3.26666 2.70001 5.84243 2.70001 9.01975C2.70001 11.074 4.06638 12.8764 6.12175 13.8942C6.00993 14.2797 5.40319 16.374 5.37904 16.5385C5.37904 16.5385 5.36451 16.6621 5.4446 16.7092C5.52469 16.7564 5.61889 16.7198 5.61889 16.7198C5.84856 16.6877 8.2822 14.979 8.70342 14.6823C9.12422 14.7419 9.55752 14.7728 10 14.7728C14.0317 14.7728 17.3 12.1971 17.3 9.01975C17.3 5.84243 14.0317 3.26666 10 3.26666Z"
+                        fill="#817b7b"></path>
+                    </svg>
+                    <span class="jsx-3433029997 button__text">카카오페이</span>
+                  </button></div>
+              </li>
+              <li>
+                <strong>혼주 이희영</strong>
+                <p>IM뱅크(대구) 246-13-248104</p>
+                <div style="display:flex;gap:10px"><button type="button"
+                    style="width:calc(100% - 5px);color:#817b7b;font-size:13px;border:1px solid #cdcdcd;border-radius:5px;margin-top:10px;padding:5px 0;height: 40px"
+                    class="jsx-3433029997 button"><svg width="16" height="16" viewBox="0 0 20 20" fill="none"
+                      style="display: unset" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M13.7895 1H3.68421C2.75789 1 2 1.73636 2 2.63636V14.0909H3.68421V2.63636H13.7895V1ZM12.9474 4.27273L18 9.18182V17.3636C18 18.2636 17.2421 19 16.3158 19H7.04421C6.11789 19 5.36842 18.2636 5.36842 17.3636L5.37684 5.90909C5.37684 5.00909 6.12632 4.27273 7.05263 4.27273H12.9474ZM12.1053 10H16.7368L12.1053 5.5V10Z"
+                        fill="#817b7b"></path>
+                    </svg>
+                    <span class="jsx-3433029997 button__text">계좌 복사하기</span>
+                  </button><button type="button"
+                    style="width:calc(100% - 5px);color:#817b7b;font-size:13px;border:1px solid #cdcdcd;border-radius:5px;margin-top:10px;padding:5px 0;height: 40px"
+                    class="jsx-3433029997 button"><svg width="16" height="16" viewBox="0 0 20 20" fill="none"
+                      style="display: unset" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M10 3.26666C5.96831 3.26666 2.70001 5.84243 2.70001 9.01975C2.70001 11.074 4.06638 12.8764 6.12175 13.8942C6.00993 14.2797 5.40319 16.374 5.37904 16.5385C5.37904 16.5385 5.36451 16.6621 5.4446 16.7092C5.52469 16.7564 5.61889 16.7198 5.61889 16.7198C5.84856 16.6877 8.2822 14.979 8.70342 14.6823C9.12422 14.7419 9.55752 14.7728 10 14.7728C14.0317 14.7728 17.3 12.1971 17.3 9.01975C17.3 5.84243 14.0317 3.26666 10 3.26666Z"
+                        fill="#817b7b"></path>
+                    </svg>
+                    <span class="jsx-3433029997 button__text">카카오페이</span>
+                  </button>
+                </div>
+              </li>
+              <!-- <li>
+                <strong>혼주 고정선</strong>
+                <p>농협은행 3561533143183</p>
+                <div style="display:flex;gap:10px"><button type="button"
+                    style="width:calc(100% - 5px);color:#817b7b;font-size:13px;border:1px solid #cdcdcd;border-radius:5px;margin-top:10px;padding:5px 0;height: 40px"
+                    class="jsx-3433029997 button"><svg width="16" height="16" viewBox="0 0 20 20" fill="none"
+                      style="display: unset" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M13.7895 1H3.68421C2.75789 1 2 1.73636 2 2.63636V14.0909H3.68421V2.63636H13.7895V1ZM12.9474 4.27273L18 9.18182V17.3636C18 18.2636 17.2421 19 16.3158 19H7.04421C6.11789 19 5.36842 18.2636 5.36842 17.3636L5.37684 5.90909C5.37684 5.00909 6.12632 4.27273 7.05263 4.27273H12.9474ZM12.1053 10H16.7368L12.1053 5.5V10Z"
+                        fill="#817b7b"></path>
+                    </svg>
+                    <span class="jsx-3433029997 button__text">계좌 복사하기</span>
+                  </button><button type="button"
+                    style="width:calc(100% - 5px);color:#817b7b;font-size:13px;border:1px solid #cdcdcd;border-radius:5px;margin-top:10px;padding:5px 0;height: 40px"
+                    class="jsx-3433029997 button"><svg width="16" height="16" viewBox="0 0 20 20" fill="none"
+                      style="display: unset" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M10 3.26666C5.96831 3.26666 2.70001 5.84243 2.70001 9.01975C2.70001 11.074 4.06638 12.8764 6.12175 13.8942C6.00993 14.2797 5.40319 16.374 5.37904 16.5385C5.37904 16.5385 5.36451 16.6621 5.4446 16.7092C5.52469 16.7564 5.61889 16.7198 5.61889 16.7198C5.84856 16.6877 8.2822 14.979 8.70342 14.6823C9.12422 14.7419 9.55752 14.7728 10 14.7728C14.0317 14.7728 17.3 12.1971 17.3 9.01975C17.3 5.84243 14.0317 3.26666 10 3.26666Z"
+                        fill="#817b7b"></path>
+                    </svg>
+                    <span class="jsx-3433029997 button__text">카카오페이</span>
+                  </button>
+                </div>
+              </li> -->
+
+            </ul>
+          </div>
+          <button class="accordion relative">
+            <p id="centerText">신부 측 계좌번호</p>
+            <div class="arrow"></div>
+          </button>
+          <div class="account-panel">
+            <ul>
+              <li>
+                <strong>신부 고지원</strong>
+                <p>신협은행 132-116-612837</p>
+                <div style="display:flex;gap:10px">
+                  <button type="button"
+                    style="width:calc(100% - 5px);color:#817b7b;font-size:13px;border:1px solid #cdcdcd;border-radius:5px;margin-top:10px;padding:5px 0;height: 40px"
+                    class="jsx-3433029997 button"><svg width="16" height="16" viewBox="0 0 20 20" fill="none"
+                      style="display: unset" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M13.7895 1H3.68421C2.75789 1 2 1.73636 2 2.63636V14.0909H3.68421V2.63636H13.7895V1ZM12.9474 4.27273L18 9.18182V17.3636C18 18.2636 17.2421 19 16.3158 19H7.04421C6.11789 19 5.36842 18.2636 5.36842 17.3636L5.37684 5.90909C5.37684 5.00909 6.12632 4.27273 7.05263 4.27273H12.9474ZM12.1053 10H16.7368L12.1053 5.5V10Z"
+                        fill="#817b7b"></path>
+                    </svg>
+                    <span class="jsx-3433029997 button__text">계좌 복사하기</span>
+                  </button>
+                  <button type="button"
+                    style="width:calc(100% - 5px);color:#817b7b;font-size:13px;border:1px solid #cdcdcd;border-radius:5px;margin-top:10px;padding:5px 0;height: 40px"
+                    class="jsx-3433029997 button"><svg width="16" height="16" viewBox="0 0 20 20" fill="none"
+                      style="display: unset" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M10 3.26666C5.96831 3.26666 2.70001 5.84243 2.70001 9.01975C2.70001 11.074 4.06638 12.8764 6.12175 13.8942C6.00993 14.2797 5.40319 16.374 5.37904 16.5385C5.37904 16.5385 5.36451 16.6621 5.4446 16.7092C5.52469 16.7564 5.61889 16.7198 5.61889 16.7198C5.84856 16.6877 8.2822 14.979 8.70342 14.6823C9.12422 14.7419 9.55752 14.7728 10 14.7728C14.0317 14.7728 17.3 12.1971 17.3 9.01975C17.3 5.84243 14.0317 3.26666 10 3.26666Z"
+                        fill="#817b7b"></path>
+                    </svg>
+                    <span class="jsx-3433029997 button__text">카카오페이</span>
+                  </button>
+                </div>
+              </li>
+              <li>
+                <strong>혼주 고경호</strong>
+                <p>신협은행 132-023-632596</p>
+                <div style="display:flex;gap:10px"><button type="button"
+                    style="width:calc(100% - 5px);color:#817b7b;font-size:13px;border:1px solid #cdcdcd;border-radius:5px;margin-top:10px;padding:5px 0;height: 40px"
+                    class="jsx-3433029997 button"><svg width="16" height="16" viewBox="0 0 20 20" fill="none"
+                      style="display: unset" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M13.7895 1H3.68421C2.75789 1 2 1.73636 2 2.63636V14.0909H3.68421V2.63636H13.7895V1ZM12.9474 4.27273L18 9.18182V17.3636C18 18.2636 17.2421 19 16.3158 19H7.04421C6.11789 19 5.36842 18.2636 5.36842 17.3636L5.37684 5.90909C5.37684 5.00909 6.12632 4.27273 7.05263 4.27273H12.9474ZM12.1053 10H16.7368L12.1053 5.5V10Z"
+                        fill="#817b7b"></path>
+                    </svg>
+                    <span class="jsx-3433029997 button__text">계좌 복사하기</span>
+                  </button><button type="button"
+                    style="width:calc(100% - 5px);color:#817b7b;font-size:13px;border:1px solid #cdcdcd;border-radius:5px;margin-top:10px;padding:5px 0;height: 40px"
+                    class="jsx-3433029997 button"><svg width="16" height="16" viewBox="0 0 20 20" fill="none"
+                      style="display: unset" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M10 3.26666C5.96831 3.26666 2.70001 5.84243 2.70001 9.01975C2.70001 11.074 4.06638 12.8764 6.12175 13.8942C6.00993 14.2797 5.40319 16.374 5.37904 16.5385C5.37904 16.5385 5.36451 16.6621 5.4446 16.7092C5.52469 16.7564 5.61889 16.7198 5.61889 16.7198C5.84856 16.6877 8.2822 14.979 8.70342 14.6823C9.12422 14.7419 9.55752 14.7728 10 14.7728C14.0317 14.7728 17.3 12.1971 17.3 9.01975C17.3 5.84243 14.0317 3.26666 10 3.26666Z"
+                        fill="#817b7b"></path>
+                    </svg>
+                    <span class="jsx-3433029997 button__text">카카오페이</span>
+                  </button>
+                </div>
+              </li>
+              <li>
+                <strong>혼주 박연아</strong>
+                <p>신협은행 132-032-354532</p>
+                <div style="display:flex;gap:10px"><button type="button"
+                    style="width:calc(100% - 5px);color:#817b7b;font-size:13px;border:1px solid #cdcdcd;border-radius:5px;margin-top:10px;padding:5px 0;height: 40px"
+                    class="jsx-3433029997 button"><svg width="16" height="16" viewBox="0 0 20 20" fill="none"
+                      style="display: unset" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M13.7895 1H3.68421C2.75789 1 2 1.73636 2 2.63636V14.0909H3.68421V2.63636H13.7895V1ZM12.9474 4.27273L18 9.18182V17.3636C18 18.2636 17.2421 19 16.3158 19H7.04421C6.11789 19 5.36842 18.2636 5.36842 17.3636L5.37684 5.90909C5.37684 5.00909 6.12632 4.27273 7.05263 4.27273H12.9474ZM12.1053 10H16.7368L12.1053 5.5V10Z"
+                        fill="#817b7b"></path>
+                    </svg>
+                    <span class="jsx-3433029997 button__text">계좌 복사하기</span>
+                  </button><button type="button"
+                    style="width:calc(100% - 5px);color:#817b7b;font-size:13px;border:1px solid #cdcdcd;border-radius:5px;margin-top:10px;padding:5px 0;height: 40px"
+                    class="jsx-3433029997 button"><svg width="16" height="16" viewBox="0 0 20 20" fill="none"
+                      style="display: unset" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M10 3.26666C5.96831 3.26666 2.70001 5.84243 2.70001 9.01975C2.70001 11.074 4.06638 12.8764 6.12175 13.8942C6.00993 14.2797 5.40319 16.374 5.37904 16.5385C5.37904 16.5385 5.36451 16.6621 5.4446 16.7092C5.52469 16.7564 5.61889 16.7198 5.61889 16.7198C5.84856 16.6877 8.2822 14.979 8.70342 14.6823C9.12422 14.7419 9.55752 14.7728 10 14.7728C14.0317 14.7728 17.3 12.1971 17.3 9.01975C17.3 5.84243 14.0317 3.26666 10 3.26666Z"
+                        fill="#817b7b"></path>
+                    </svg>
+                    <span class="jsx-3433029997 button__text">카카오페이</span>
+                  </button>
+                </div>
+              </li>
+              <!-- <li>
+                  <strong>신부 아버지</strong><br />농협 301819-52-029714
+                  (오석기)
+                </li>
+                <li>
+                  <strong>신부 어머니</strong><br />케이뱅크 893-254854-371
+                  (조민희)
+                </li> -->
+            </ul>
+          </div>
+          <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+              acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var accountPanel = this.nextElementSibling;
+                if (this.classList.contains("active")) {
+                  accountPanel.style.height = "550px";
+                  accountPanel.style.padding = "5%";
+                } else {
+                  accountPanel.style.height = "0";
+                  accountPanel.style.padding = "0";
+                }
+              });
+            }
+          </script>
+
+          <!-- 공유하기 버튼 -->
+          <div class="total-button-container">
+            <div class="button-container">
+              <button id="snsButton" type="button" class="shareKt">
+                <img src="img/kakaotalk.png" alt="카카오톡" style="width: 25px; height: 25px" />
+                &nbsp;&nbsp;카카오톡
+              </button>
+              <!-- <button id="snsButton" type="button" class="shareKs">
+                  <img
+                    src="img/kakaostory.png"
+                    alt="카카오스토리"
+                    style="width: 25px; height: 25px"
+                  />
+                  카카오스토리
+                </button> -->
+              <!-- <button id="snsButton" type="button" class="shareFb">
+                  <img
+                    src="img/facebook.png"
+                    alt="페이스북"
+                    style="width: 25px; height: 25px"
+                  />
+                  페이스북
+                </button> -->
+              <button id="snsButton" type="button" class="shareTwoG">
+                <img src="img/smstalk.png" alt="문자전송" style="width: 25px; height: 25px" />
+                &nbsp;&nbsp;2G 휴대폰 전송
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 하단 로고 -->
+      <footer>
+        <div class="animate-on-scroll">
+          <div class="flex justify-center">
+            <a href="https://www.instagram.com/luvle_studio?igsh=dG4zNzNkZzg4anll">
+              <img src="img/footer_logo.png" alt="러블 로고 이미지" />
+            </a>
+          </div>
+        </div>
+      </footer>
+  </div>
+  </main>
+  </div>
+
+  <div class="swiper swiper-container" style="display: none">
+    <div class="swiper-wrapper slide-wrapper">
+      <div class="swiper-slide">
+        <img src="img/wedding/1.png" title="TITLE 1" />
+      </div>
+      <div class="swiper-slide">
+        <img src="img/wedding/2.png" title="TITLE 2" />
+      </div>
+      <div class="swiper-slide">
+        <img src="img/wedding/3.png" title="TITLE 3" />
+      </div>
+      <div class="swiper-slide">
+        <img src="img/wedding/4.png" title="TITLE 4" />
+      </div>
+      <div class="swiper-slide">
+        <img src="img/wedding/5.png" title="TITLE 5" />
+      </div>
+      <div class="swiper-slide">
+        <img src="img/wedding/6.png" title="TITLE 6" />
+      </div>
+      <div class="swiper-slide">
+        <img src="img/wedding/7.png" title="TITLE 7" />
+      </div>
+      <div class="swiper-slide">
+        <img src="img/wedding/8.png" title="TITLE 8" />
+      </div>
+      <div class="swiper-slide">
+        <img src="img/wedding/9.png" title="TITLE 9" />
+      </div>
+      <div class="swiper-slide">
+        <img src="img/wedding/10.png" title="TITLE 10" />
+      </div>
+      <div class="swiper-slide">
+        <img src="img/wedding/11.png" title="TITLE 11" />
+      </div>
+      <div class="swiper-slide">
+        <img src="img/wedding/12.png" title="TITLE 12" />
+      </div>
+      <div class="swiper-slide">
+        <img src="img/wedding/13.png" title="TITLE 13" />
+      </div>
+      <div class="swiper-slide">
+        <img src="img/wedding/14.png" title="TITLE 14" />
+      </div>
+      <!-- <div class="swiper-slide">
+        <img src="img/wedding/15.png" title="TITLE 15" />
+      </div>
+      <div class="swiper-slide">
+        <img src="img/wedding/16.png" title="TITLE 16" />
+    </div> -->
+  
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,555 @@
+@font-face {
+  font-family: 'GowunBatang-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "GowunBatang-Regular", serif;
+  letter-spacing: -0.3px;
+  /* 고운바탕 폰트 적용 */
+}
+
+svg {
+  display: unset;
+  vertical-align: unset;
+}
+
+/* 재생 버튼 스타일 */
+#playButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.animate-on-scroll-main {
+  opacity: 0;
+  transform: translateY(-50%);
+  transition: opacity 1s ease, transform 1s ease;
+  /* 변화가 느리도록 조정 */
+}
+
+.animate-on-scroll-main.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.arrow {
+  position: absolute;
+  transform: rotate(0);
+  transition-duration: 0.5s;
+  transform-origin: center center;
+  right: 2rem;
+  width: 13px;
+  height: 10px;
+  background-image: url("./img/arrow.png");
+  background-size: cover;
+}
+
+.rotate {
+  transform: rotate(180deg);
+  transition-duration: 0.5s;
+}
+
+.ContentsImgIssuePhoto {
+  height: 70%;
+}
+
+#couplenamecontainer {
+  width: 100%;
+  margin: 1% 0 1% 0;
+}
+
+#MainTextContainer {
+  margin: 10% 0;
+}
+
+#titleInfo {
+  font-size: 18px;
+  /* line-height: 1.7rem; */
+  font-weight: 600;
+  text-align: center;
+  margin: 5% 0 13% 0;
+  color: #242424;
+}
+
+.couple {
+  text-align: center;
+}
+
+.couplename {
+  font-size: 22px;
+  font-weight: 500;
+  color: #222222;
+}
+
+#dash {
+  width: 55px;
+  height: 1px;
+  background-color: #5c5c5c;
+  margin: 10px auto;
+}
+
+#coverdisc {
+  margin: 13% 0 5% 0;
+  line-height: 2.5rem;
+  text-align: center;
+}
+
+#coverdiscInfo {
+  font-size: 16px;
+}
+
+#weddingHallCallP {
+  color: #545454;
+}
+
+#parentInfo {
+  margin: 2% 0 2% 0;
+  text-align: center;
+}
+
+#gallerySection {
+  background-color: #FEF8FA;
+  padding-top: 20%;
+}
+
+#gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-gap: 5px;
+  background-color: #FEF8FA;
+  /* (A2) OPTIONAL WIDTH RESTRICT */
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+  /* padding-bottom: 50px; */
+}
+
+/* (B) GALLERY IMAGES */
+#gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* (E) FULLSCREEN MODE */
+#gallery img.full {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100vw;
+  height: 100vh;
+  object-fit: contain;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+#gallery img.full:hover {
+  z-index: 999;
+  transform: none;
+}
+
+#showMoreBtn {
+  background-color: white;
+  width: 70px;
+  text-align: center;
+  margin: 7% auto;
+  /* 좌우 중앙 정렬을 위해 auto 값을 사용합니다. */
+  display: block;
+  /* 버튼을 블록 요소로 만들어야 좌우 중앙 정렬이 적용됩니다. */
+  border-radius: 15px;
+  font-size: 13px;
+  height: 30px;
+}
+
+#collapseBtn {
+  background-color: white;
+  width: 70px;
+  text-align: center;
+  margin: 7% auto;
+  /* 좌우 중앙 정렬을 위해 auto 값을 사용합니다. */
+  display: block;
+  /* 버튼을 블록 요소로 만들어야 좌우 중앙 정렬이 적용됩니다. */
+  border-radius: 15px;
+  font-size: 13px;
+  height: 30px;
+}
+
+#countdown {
+  height: 180px;
+  text-align: center;
+  background-color: white;
+
+  table {
+    width: 65%;
+    font-size: 1rem;
+
+    th {
+      font-weight: normal;
+    }
+
+    tr {
+      height: 30px;
+    }
+  }
+}
+
+#countdownInfo {
+  margin-top: 7%;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.countdownTimeUnit {
+  font-size: 16px;
+  text-align: center;
+  margin-top: 5%;
+  margin: 0 20px;
+  font-weight: 200;
+}
+
+.countdownTimeSub {
+  font-size: 16px;
+  margin: 0 27px;
+  /* 간격 조정 */
+  font-weight: 300;
+}
+
+.countdownTimeInfo {
+  color: #FF5C81;
+  font-weight: 600;
+}
+
+.weddinghall-call-info {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+#weddingHallCallButton img {
+  margin-right: 10px;
+  /* 이미지와 전화번호 사이의 간격을 조정할 수 있습니다. */
+}
+
+#weddingHallCallButton {
+  /* padding: 5px 15px 5px 15px; */
+  /* 버튼 내부의 여백을 조정합니다. */
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  align-items: center;
+  width: 150px;
+  border-radius: 15px;
+  font-size: 13px;
+  height: 30px;
+  /* border: 0.5px solid black; */
+  /* 테두리 스타일을 설정합니다. */
+  /* background-color: transparent; */
+  /* 배경을 투명하게 설정합니다. */
+}
+
+#mapContainer {
+  background-color: #eaeaea;
+  height: 300px;
+  position: relative;
+  height: 250px;
+  /* 상대 위치 지정 */
+}
+
+#locationSection {
+  margin-top: 3%;
+  background-color: #FEF8FA;
+  height: 265px;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+  /* 부모 요소에 대해 100%의 높이를 가지도록 설정합니다. */
+}
+
+main {
+  /* padding-bottom: 2rem; */
+  width: 100%;
+  height: 100%;
+}
+
+#locationMoveSection {
+  background-color: #f4eeeb;
+  display: flex;
+  flex-direction: column;
+  /* 요소들을 수직으로 정렬합니다. */
+  align-items: center;
+  /* 요소들을 수평으로 정렬합니다. */
+}
+
+#locationMoveBox {
+  padding-top: 7%;
+  padding-bottom: 7%;
+  margin-top: 3%;
+  width: 100%;
+  text-align: center;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+#locationMoveTitleInfo {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 2rem;
+  margin-bottom: 2%;
+}
+
+#locationMoveSubInfo {
+  line-height: 1.6rem;
+  font-size: 12px;
+  color: #747474;
+  font-weight: 500;
+  margin-bottom: 4%;
+}
+
+#locationMoveInfo {
+  line-height: 1.6rem;
+  font-size: 12px;
+  color: #747474;
+  font-weight: 500;
+}
+
+#accountNumberSection {
+  background-color: white;
+  padding-top: 15%;
+  padding-bottom: 3rem;
+}
+
+.accordion {
+  background-color: #FEF8FA;
+  color: black;
+  cursor: pointer;
+  padding: 0.8rem;
+  width: 100%;
+  transition: 0.4s;
+  margin: 1rem 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  /* 내용을 좌우로 분산 정렬 */
+  align-items: center;
+
+  &.active {
+    .arrow {
+      rotate: 180deg;
+    }
+  }
+}
+
+#centerText {
+  margin-left: auto;
+  /* 왼쪽 여백을 auto로 설정하여 가운데 정렬 */
+  margin-right: auto;
+  /* 오른쪽 여백을 auto로 설정하여 가운데 정렬 */
+  font-weight: 600;
+}
+
+#accountNumberTitleInfo {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: #242424;
+  margin-bottom: 6%;
+}
+
+.total-button-container {
+  margin-top: 5%;
+}
+
+.button-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* 2열로 그리드를 설정합니다. */
+  grid-gap: 10px;
+  /* 그리드 간격을 조절합니다. */
+}
+
+#snsButton {
+  background-color: #ffffff;
+  /* border: 1px solid #cccccc; */
+  padding: 10px;
+  text-align: center;
+  color: #777777;
+  width: 100%;
+}
+
+/* 그리드 아이템의 스타일을 설정합니다. */
+.shareKt,
+.shareKs,
+.shareFb,
+.shareTwoG {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+}
+
+.account-panel {
+  height: 0rem;
+  background-color: white;
+  overflow: hidden;
+  line-height: 2;
+  transition: 0.5s ease-out;
+}
+
+.account-panel ul li {
+  text-align: left;
+  padding-bottom: 45px;
+}
+
+.maplink {
+  display: inline-block;
+}
+
+#MapIconDiv {
+  color: #00000;
+  font-size: 13px;
+  text-align: center;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* 가로 가운데 정렬을 위한 align-items 속성 추가 */
+  margin: 0 auto;
+}
+
+#kakaoMapButton {
+  background-color: #FFBFE1;
+  padding: 10px;
+  text-align: center;
+  width: auto;
+  /* 이미지와 텍스트 크기에 따라 너비 조정 */
+  display: flex;
+  /* 이미지와 텍스트를 한 줄로 나란히 정렬하기 위해 flex로 설정 */
+  align-items: center;
+  /* 세로 가운데 정렬을 위한 align-items 속성 추가 */
+  justify-content: center;
+  /* 가로 가운데 정렬을 위한 justify-content 속성 추가 */
+}
+
+/* #galleryImages {
+  overflow: hidden;
+  height: 370px;
+  transition: 0.5s ease-out;
+} */
+
+@media (max-width: 960px) {
+  .artboard {
+    width: 100%;
+    /* font-size: 16px; */
+  }
+
+  #issueTextBox {
+    margin: 0px 10% 18px 0px;
+  }
+}
+
+@media (max-width: 500px) {
+  html {
+    font-size: 15px;
+    /* padding: 0 15px; */
+  }
+
+  h2 {
+    font-size: 1.7rem;
+  }
+
+  section {
+    /* padding-right: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 50px; */
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+
+  #gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 375px) {
+  html {
+    font-size: 14px;
+    /* padding: 0 15px; */
+  }
+}
+
+.swiper-container {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100vw;
+  height: 100vh;
+  object-fit: contain;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.swiper-slide {
+  display: flex !important;
+  align-items: center;
+}
+
+.swiper-slide img {
+  max-width: 100%;
+}
+
+/* .swiper-container {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto !important;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.big-picture-container {
+  margin-bottom: 1rem;
+  width: 100%;
+  height: 400px;
+}
+
+.big-picture-container #big-picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+} */
